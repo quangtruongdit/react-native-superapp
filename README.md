@@ -19,7 +19,7 @@ yarn bootstrap
 Pod install iOS *(Only for iOS)*
 
 ```bash
-yarn pod-instal
+yarn pod-install
 ```
 
 
