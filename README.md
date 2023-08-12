@@ -1,11 +1,11 @@
-# rn-micro-frontend-boilerplate
-React Native (Super App) boilerplate for Micro Front Ends
+# react-native-superapp
+React Native Super App using Re.Pack
 
 ## Usage
 
 Clone project with sub modules:
 ```bash
-git clone --recursive -j8 https://github.com/el173/rn-micro-frontend-boilerplate.git
+git clone --recursive -j8 https://github.com/quangtruongdit/react-native-superapp.git
 ```
 
 Install dependencies:
@@ -19,7 +19,6 @@ Pod install iOS *(Only for iOS)*
 ```bash
 yarn pod-install
 ```
-
 
 Start development servers separately:
 
