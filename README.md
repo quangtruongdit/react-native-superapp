@@ -8,8 +8,6 @@ Clone project with sub modules:
 git clone --recursive -j8 https://github.com/el173/rn-micro-frontend-boilerplate.git
 ```
 
-
-
 Install dependencies:
 
 ```bash
@@ -19,7 +17,7 @@ yarn bootstrap
 Pod install iOS *(Only for iOS)*
 
 ```bash
-yarn pod-instal
+yarn pod-install
 ```
 
 
@@ -30,6 +28,24 @@ Start development servers separately:
 yarn start:app1
 yarn start:app2
 yarn start:host
+```
+
+Remember to reverse port when run on real android device:
+
+```bash
+# for host app
+adb -s {your android device name} reverse tcp:8081 tcp:8081
+# for app1
+adb -s {your android device name} reverse tcp:8083 tcp:8083
+# for app2
+adb -s {your android device name} reverse tcp:8084 tcp:8084
+```
+
+You may got an issue with android sdk is not set in local.properties. Try to do gradle sync your host app if this issue shows on console log.
+```bash
+cd ./rn-super-app/android
+# make sure gradle is installed before using it
+gradle build
 ```
 
 Run Host app:
